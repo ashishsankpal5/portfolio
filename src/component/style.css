@@ -1,0 +1,73 @@
+.info-box {
+  background-color: #f5f6f8;
+}
+.mainNme {
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 40px;
+  text-decoration: none;
+}
+/* Cover Imagage */
+#frnt-img {
+  border-radius: 155px;
+}
+/* img outside */
+#img-outside {
+  border-radius: 155px;
+  padding: 6px;
+}
+.crc {
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+  font-size: 15px;
+}
+.menu_active {
+  font-weight: bold;
+  border-bottom: 1px solid #567387;
+}
+#abc {
+  color: black;
+  margin: 8px;
+  font-size: 25px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.abtMe {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+}
+.contacts {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+}
+/* Project Section */
+#proj-fnt {
+  font-family: 'Montserrat', sans-serif;
+}
+#proj-nme {
+  font-family: 'Montserrat', sans-serif;
+  font-size: '60px';
+  font-weight: bolder;
+}
+
+/* Education */
+#edu {
+  border-radius: 180px;
+}
+#edu-name {
+  font-family: 'Montserrat', sans-serif;
+}
+#edu-para {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* WHAT I KNOW */
+.win {
+  font-family: 'Montserrat', sans-serif;
+}
