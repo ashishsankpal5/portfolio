@@ -1,7 +1,8 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import { Link, Box } from '@chakra-ui/react';
-import { Link as RouterLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import './Navbar.css';
 
 // import './style.css';
 
@@ -13,9 +14,9 @@ const Navbar = () => {
           <div className="row">
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
               <div className="container-fluid">
-                <Link as={RouterLink} id="ashi" className="navbar-brand" to="/">
+                <NavLink id="ashi" className="navbar-brand" to="/">
                   ASHISH SHANKAR SANKPAL
-                </Link>
+                </NavLink>
                 <button
                   className="navbar-toggler"
                   type="button"
@@ -33,34 +34,42 @@ const Navbar = () => {
                 >
                   <ul className="navbar-nav ml-auto mb-2 mb-lg-0">
                     <li className="nav-item">
-                      <Link
+                      <NavLink
                         exact
-                        as={RouterLink}
+                        activeClassName="ac-tive"
                         className="nav-link active"
                         aria-current="page"
                         to="/"
                       >
                         HOME
-                      </Link>
+                      </NavLink>
                     </li>
                     <li className="nav-item">
-                      <Link as={RouterLink} className="nav-link" to="/projects">
-                        PROJECTS
-                      </Link>
-                    </li>
-                    <li className="nav-item">
-                      <Link
-                        as={RouterLink}
+                      <NavLink
                         className="nav-link"
+                        activeClassName="ac-tive"
+                        to="/projects"
+                      >
+                        PROJECTS
+                      </NavLink>
+                    </li>
+                    <li className="nav-item">
+                      <NavLink
+                        className="nav-link"
+                        activeClassName="ac-tive"
                         to="/education"
                       >
                         EDUCATION
-                      </Link>
+                      </NavLink>
                     </li>
                     <li className="nav-item">
-                      <Link as={RouterLink} className="nav-link" to="/skills">
+                      <NavLink
+                        className="nav-link"
+                        activeClassName="ac-tive"
+                        to="/skills"
+                      >
                         SKILLS
-                      </Link>
+                      </NavLink>
                     </li>
                   </ul>
                 </div>
