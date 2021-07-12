@@ -10,6 +10,7 @@ import { SiMysql } from 'react-icons/si';
 import { DiNodejs, DiMongodb } from 'react-icons/di';
 import { BsFillBootstrapFill } from 'react-icons/bs';
 import Progress from './Progress';
+import Work from './Work';
 import './style.css';
 import './progressStyle.css';
 
@@ -69,41 +70,51 @@ const Skills = () => {
         </Flex>
       </Box>
       <Flex
-        direction="column"
-        justifyContent="center"
+        direction="row"
+        justifyContent="space-between"
         alignItems="center"
         id="proj-fnt"
-        mt="100"
+        // mt="100"
+        // border="2px solid black"
+        px="96"
+        mx="96"
       >
-        <Text className="contacts" borderBottom="1.5px solid #3c3c42">
-          Get in touch
-        </Text>
-        <Flex direction="column">
-          <Box>
-            <Link
-              isExternal
-              href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox"
-              textDecor="none"
-              color="black"
-              _hover={{ color: '#1DA1F2', opacity: '0.7' }}
-            >
-              <Icon id="abc" as={IoIosMail} />
-              ashishsankpal5@gmail.com
-            </Link>
-          </Box>
-          <Box>
-            <Link
-              isExternal
-              href="https://www.linkedin.com/in/ashish-sankpal-a02a5418b/"
-              textDecor="none"
-              color="black"
-              _hover={{ color: '#1DA1F2', opacity: '0.7' }}
-            >
-              <Icon id="abc" as={IoLogoLinkedin} />
-              ashish sankpal
-            </Link>
-          </Box>
-        </Flex>
+        <Box>
+          <Text
+            className="contacts"
+            borderBottom="1.5px solid #3c3c42"
+            textAlign="center"
+          >
+            Get in touch
+          </Text>
+          <Flex direction="column">
+            <Box>
+              <Link
+                isExternal
+                href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox"
+                textDecor="none"
+                color="black"
+                _hover={{ color: '#1DA1F2', opacity: '0.7' }}
+              >
+                <Icon id="abc" as={IoIosMail} />
+                ashishsankpal5@gmail.com
+              </Link>
+            </Box>
+            <Box>
+              <Link
+                isExternal
+                href="https://www.linkedin.com/in/ashish-sankpal-a02a5418b/"
+                textDecor="none"
+                color="black"
+                _hover={{ color: '#1DA1F2', opacity: '0.7' }}
+              >
+                <Icon id="abc" as={IoLogoLinkedin} />
+                ashish sankpal
+              </Link>
+            </Box>
+          </Flex>
+        </Box>
+        <Work />
       </Flex>
     </>
   );

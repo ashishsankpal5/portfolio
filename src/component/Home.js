@@ -1,15 +1,18 @@
 import React from 'react';
 import { Box, Flex, Image, Text, Grid, Link, Icon } from '@chakra-ui/react';
 import { IoLogoLinkedin, IoLogoInstagram, IoMail } from 'react-icons/io5';
+import { BsDownload } from 'react-icons/bs';
 import { Link as RouterLink } from 'react-router-dom';
 import imgg from '../images/mypic.JPG';
 import './style.css';
+import cv from '../asset/Resume9128.pdf';
 const Home = () => {
   return (
     <>
-      <Box
+      <Flex
         className="info-box"
-        pb="50"
+        direction="column"
+        // pb="50"
         borderBottom="1px solid #c2c0bc"
         borderTop="1px solid #c2c0bc"
         textAlign="center"
@@ -33,7 +36,22 @@ const Home = () => {
           </Link>
         </Box>
         <Text className="crc">Full-Stack JavaScript Developer</Text>
-      </Box>
+        <Flex justifyContent="flex-end">
+          <Link
+            className="cv"
+            href={cv}
+            alt="nodata"
+            download
+            textDecoration="none"
+            color="black"
+            mr="22"
+            mb="6"
+          >
+            <Icon as={BsDownload} mr="4" />
+            Download CV
+          </Link>
+        </Flex>
+      </Flex>
 
       <Flex justifyContent="center">
         <Grid
