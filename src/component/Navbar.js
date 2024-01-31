@@ -1,8 +1,8 @@
-import React from 'react';
-import 'bootstrap/dist/css/bootstrap.css';
-import { Link, Box } from '@chakra-ui/react';
-import { NavLink } from 'react-router-dom';
-import './Navbar.css';
+import React from "react";
+import "bootstrap/dist/css/bootstrap.css";
+import { Link, Box } from "@chakra-ui/react";
+import { NavLink } from "react-router-dom";
+import "./Navbar.css";
 
 // import './style.css';
 
@@ -14,9 +14,9 @@ const Navbar = () => {
           <div className="row">
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
               <div className="container-fluid">
-                <NavLink id="ashi" className="navbar-brand" to="/">
-                  ASHISH SHANKAR SANKPAL
-                </NavLink>
+                {/* <NavLink id="ashi" className="navbar-brand" to="/">
+                  Web Developer
+                </NavLink> */}
                 <button
                   className="navbar-toggler"
                   type="button"
@@ -36,7 +36,7 @@ const Navbar = () => {
                     <li className="nav-item">
                       <NavLink
                         exact
-                        activeClassName="ac-tive"
+                        // activeClassName="ac-tive"
                         className="nav-link active"
                         aria-current="page"
                         to="/"
@@ -47,7 +47,7 @@ const Navbar = () => {
                     <li className="nav-item">
                       <NavLink
                         className="nav-link"
-                        activeClassName="ac-tive"
+                        // activeClassName="ac-tive"
                         to="/projects"
                       >
                         PROJECTS
@@ -56,7 +56,7 @@ const Navbar = () => {
                     <li className="nav-item">
                       <NavLink
                         className="nav-link"
-                        activeClassName="ac-tive"
+                        // activeClassName="ac-tive"
                         to="/education"
                       >
                         EDUCATION
@@ -65,7 +65,7 @@ const Navbar = () => {
                     <li className="nav-item">
                       <NavLink
                         className="nav-link"
-                        activeClassName="ac-tive"
+                        // activeClassName="ac-tive"
                         to="/skills"
                       >
                         SKILLS

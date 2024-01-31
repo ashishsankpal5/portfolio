@@ -1,6 +1,6 @@
-import { GoMarkGithub } from 'react-icons/go';
-import { SiStackoverflow } from 'react-icons/si';
-import { Icon, Flex, Link, Heading } from '@chakra-ui/react';
+import { FaGithub } from "react-icons/fa";
+import { SiStackoverflow } from "react-icons/si";
+import { Icon, Flex, Link, Heading } from "@chakra-ui/react";
 
 const Work = () => {
   return (
@@ -10,22 +10,23 @@ const Work = () => {
         display="flex"
         alignItems="center"
         justifyContent="center"
-        h="100vh"
+        // h="100vh"
+        mt={"20"}
       >
         <Flex display="flex" direction="column">
           <Heading
             as="h1"
             className="contacts"
             textAlign="center"
-            borderBottom="1.5px solid black"
+            textDecoration={"underline"}
             mb="6"
           >
             My Works
           </Heading>
           <Link isExternal href="https://github.com/ashishsankpal5">
             <Icon
-              as={GoMarkGithub}
-              _hover={{ color: ' #4c4c4c' }}
+              as={FaGithub}
+              _hover={{ color: " #4c4c4c" }}
               fontSize="large"
               m="8"
             />
@@ -37,7 +38,7 @@ const Work = () => {
           >
             <Icon
               as={SiStackoverflow}
-              _hover={{ color: '#ef8236' }}
+              _hover={{ color: "#ef8236" }}
               fontSize="large"
               m="8"
             />

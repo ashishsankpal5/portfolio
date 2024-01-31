@@ -1,6 +1,6 @@
-import { Box, Flex, Link, Text } from '@chakra-ui/react';
-import { Link as RouterLink } from 'react-router-dom';
-import './style.css';
+import { Box, Flex, Link, Text } from "@chakra-ui/react";
+import { Link as RouterLink } from "react-router-dom";
+import "./style.css";
 
 const Education = () => {
   return (
@@ -19,12 +19,18 @@ const Education = () => {
         </Flex>
       </Box>
 
-      <Box minHeight="200" mt="72">
+      <Box minHeight="200" mt="72" mb="72">
         <Flex justifyContent="center">
-          <Box minHeight="150" w="70%" m="9" p="10" bgColor="#f2f3f7">
+          <Box
+            minHeight="150"
+            w="70%"
+            m="9"
+            p="10"
+            bgColor="#f2f3f7"
+            borderRadius={"10px"}
+          >
             <Text id="edu-name" display="inline-flex" fontWeight="bold">
-              Under-Graduation at Vishwaniketan's iMEET -{' '}
-              <Text> (2017 - 2020) </Text>
+              Under-Graduation at Vishwaniketan's iMEET - (2017 - 2020)
             </Text>
             <Text id="edu-para" color="gray" fontSize="small">
               I have completed my under-graduation studies with major in
@@ -45,10 +51,12 @@ const Education = () => {
             p="10"
             id="sec-para"
             bgColor="#f2f3f7"
+            borderRadius={"10px"}
           >
             <Text display="inline-flex" fontWeight="bold" id="edu-name">
-              Diploma at Bharti Vidyapeeth College of Engineering{' '}
-              <Text> (2013 - 2017) </Text>
+              Diploma at Bharti Vidyapeeth College of Engineering -
+              <br />
+              (2013 - 2017)
             </Text>
             <Text id="edu-para" color="gray" fontSize="small">
               I also completed my Diploma studies with major in (Computer
@@ -67,9 +75,11 @@ const Education = () => {
             p="10"
             id="sec-para"
             bgColor="#f2f3f7"
+            borderRadius={"10px"}
           >
             <Text display="inline-flex" fontWeight="bold" id="edu-name">
-              Primary and Higher Education - <Text>2013 </Text>
+              Primary and Higher Education - <br />
+              2013
             </Text>
             <Text id="edu-para" color="gray" fontSize="small">
               I've done my Higher Education with major subjects as Physics,

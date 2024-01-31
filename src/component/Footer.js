@@ -1,5 +1,5 @@
-import { Flex, Link, Icon, Box } from '@chakra-ui/react';
-import { IoLogoInstagram, IoMail, IoLogoLinkedin } from 'react-icons/io5';
+import { Flex, Link, Icon, Box } from "@chakra-ui/react";
+import { IoLogoInstagram, IoMail, IoLogoLinkedin } from "react-icons/io5";
 
 const Footer = () => {
   return (
@@ -8,6 +8,7 @@ const Footer = () => {
         as="footer"
         justifyContent="space-between"
         borderTop="1px solid #c2c0bc"
+        className="footer"
       >
         <Flex
           flexDirection="row"
@@ -17,7 +18,7 @@ const Footer = () => {
           fontSize="12"
           color="#AAAAAA"
         >
-          © 2021 Ashish sankpal.
+          © 2024 Ashish sankpal.
         </Flex>
         <Flex justifyContent="space-between">
           <Box ml="6" mr="6" color="#AAAAAAA">
@@ -26,7 +27,7 @@ const Footer = () => {
                 as={IoLogoInstagram}
                 mr="8"
                 ml="8"
-                _hover={{ opacity: '0.7', color: 'black' }}
+                _hover={{ opacity: "0.7", color: "black" }}
                 color="#AAAAAA"
               />
             </Link>
@@ -38,7 +39,7 @@ const Footer = () => {
                 as={IoLogoLinkedin}
                 mr="8"
                 ml="8"
-                _hover={{ opacity: '0.7', color: 'black' }}
+                _hover={{ opacity: "0.7", color: "black" }}
                 color="#AAAAAA"
               />
             </Link>
@@ -50,7 +51,7 @@ const Footer = () => {
                 as={IoMail}
                 mr="8"
                 ml="8"
-                _hover={{ opacity: '0.7', color: 'black' }}
+                _hover={{ opacity: "0.7", color: "black" }}
                 color="#AAAAAA"
               />
             </Link>
